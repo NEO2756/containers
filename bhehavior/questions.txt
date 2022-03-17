@@ -1,0 +1,89 @@
+CUTOMER OBBSESSION
+
+Q: Situation where you solved customer's pain point ?
+   Go beyond for a customer to help them ?
+A: Situation : CRM team getting lot of calls for thier wrong CIBIL credit scores.
+   Task: Fix the reporting to different govt bodies and challange was that we need to fix ealrier month reports also.
+         Was very difficult to get along the different counter parts: CIBIL bodies, TUDF bodies, Product managers
+         and align them for the same goal.
+    Action: Fix the issues in reporting via chinese team, understand their code and calculation in the backend.
+            Fix report generation and scheduling of reports.
+    Result: Decreased the callcenter calls by 40% for reporting CIBIL scores.
+Q: Dealt with difficult cuustomer ?
+   Delat with customer for win-win situation?
+A: When customer is date driven rather than quality driven.
+    - In my role as a Product Owner, I was developing a platform for a logistics company.
+    - As a PO and that too of a digital agency, my work was mostly before-end-to-after-end, 
+    - it would start from pitching, strategy, product management, launch, funding deck prep.
+    - In mid of the product management cycle, the client starts adding pressure to deliver way before the deadline, 
+    - as they had found the PE firm that conceptually was ready to start funding discussion, since this was 
+    - not scoped before the start, the early delivery was never planned.Considering the need to go to market at pace, 
+    - I negotiated with the client to refine the MVP as per the interest of the PE firm, with a product roadmap to include the rest of the deliverables.
+    - Also, gauging the extreme interest of the PE firm in the rest of the product roadmap. 
+    - Further negotiated to have our company's stake in the product if we deliver it by the deadline.
+    - At the company end negotiated with the resourcing manager to add resources to ensure we can meet the delivery.
+    - We met the delivery, with all deliverables at the said date, the client got their funding, my company secured a stake and i got the bonus cut from it.
+    - I would rather say Win-Win-Win-Win
+
+OWNERSHIP 
+
+Q:  Tell me about a time where you were dissatisfied with the status quo?
+    Tell me about a time you made a bold and difficult decision.
+    Describe a tough situation in which you had to step into a leadership role.
+    Tell me about a tough decision you made during a project.   
+A:  
+    Situation: Situation arises when I joined Dexhigh and where i joined as leading teams not only in india 
+    but our korean parts also. We had a product bitnaru.com which was centralized crytpo exchange. In the intial
+    days I noticed that the team takes lot of time in deployment of the new changes and the process for doing deployment
+    is all manual. Usual time to time to deliver a change via complete cycle was taking almost 12 days.
+
+    Tasks: make list of Approvals and process (Business process) + Average cycle
+           Smart run books the team made to follow the deployments.
+           How we cna automate those runbooks as sutomated scripts.
+    
+    Actions: Spoke to Manager for getting this to be automated and savings time.
+             Request for team of size 3 and Get approvals for 2 months.
+    Results: Release time decreses from 12 days to one day.
+
+Invent & Simplify
+
+Q:  "Tell me about a time where you came up with a simple solution to a complex problem."
+    "Tell me about a time when you solved a complex problem and how you went about it?"
+    "How do you handle roadblocks or obstacles?"
+
+A:  
+    Situation: Sitution was arisen when i used to work with in linux device driver teams in saksen communications.
+               One issue was locked in by the testing team and the frequency of the 2/75. Situation was difficult
+               because of very less frequency of the bug and more time taken to re-produce the bug.
+    tasks:     I took over this bug from a junior resource and it already boils up in customer's eye. My definitive
+               task was looking for to narrow down the approch for reproducing that bug. instead of reproducing the bug 
+               using remote i wrote a sample application which takes the input file and scrap intial frames and queue
+               them one after the other.
+    Actions:   Using the sample app just under 100LOCs I was able to reproduce the bug with 100 frquency and figured it
+               that the issue was race condition and between middle layer and device driver layer.
+    Result:    I fixed the bug and removes the race condition.
+
+Bias for Action: Fail fast + Take calculated risks
+
+Q:  -Tell me about a time you took a risk. What kind of risk was it?
+    - Give me an example of a calculated risk that you have taken where speed was critical.
+      What was the situation and how did you handle it? What steps did you take to mitigate the risk? What was the outcome?
+    - Tell me about a time you had to make a decision with incomplete information. 
+      How did you make it and what was the outcome?
+    - Describe a situation where you made an important business decision without consulting your manager. 
+      What was the situation and how did it turn out?
+
+A: 
+    Situation: During my current project where we had to migrate the existing reporting tool cognos which is very heavy
+               and high TCO cost. Hitachi also has an opensource reporting tool called pentaho.
+    Task:      Cosely analysed with client the requiremts and found we dont have capability to genertae reports in pdf
+               format.
+    Actions:   Quickly engaged the team and did internal approval to make a patchset to support the feature. In short period
+               of time we gave support for that fucntionality and proposed the POC to customer with half of the cost.
+    Result:    Deliver POC with all cases covered.
+
+Are Right, A Lot
+    - Mistakes/Errors/Regrets etc
+    - Disagreemtn with Team/Colleague etc
+
+Q: Tell me about a time you made a mistake

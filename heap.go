@@ -2,83 +2,108 @@
  * Definition of Interval:
 
  */
-package main
 
-import (
-	"container/heap"
-	"fmt"
-	"sort"
-)
-
-type Interval struct {
-	Start, End int
+///////////////////////////////////////////
+/*type char struct {
+	frq int
+	val rune
 }
+type myheap []char
 
-/**
- * @param intervals: an array of meeting time intervals
- * @return: the minimum number of conference rooms required
- */
-
-type intheap []int
-
-func (h intheap) Len() int {
+func (h myheap) Len() int {
 	return len(h)
 }
-func (h intheap) Swap(i, j int) {
-	h[i], h[j] = h[j], h[i]
+func (h myheap) Swap(i, j int) {
+	h[i].frq, h[j].frq = h[j].frq, h[i].frq
+	h[i].val, h[j].val = h[j].val, h[i].val
 }
-func (h intheap) Less(i, j int) bool {
-	return h[i] < h[j]
+func (h myheap) Less(i, j int) bool {
+	return h[i].frq < h[j].frq
 }
-func (h *intheap) Push(x interface{}) {
-	*h = append(*h, x.(int))
+func (h *myheap) Push(x interface{}) {
+	*h = append(*h, x.(char))
 }
-func (h *intheap) Pop() interface{} {
+func (h *myheap) Pop() interface{} {
 	old := *h
 	n := len(old)
 	x := old[n-1]
 	*h = old[0 : n-1]
 	return x
 }
-func (h *intheap) Top() int {
+func (h *myheap) Top() char {
 	return (*h)[0]
 }
 
-func minMeetingRooms(intervals []*Interval) int {
-	// Write your code here
+// func partitionLabels(s string) []int {
 
-	if len(intervals) == 0 {
-		return 0
+// 	f := make([]int, 26)
+// 	ans := make([]int, 0)
+// 	hp := myheap{}
+
+// 	for i := 0; i < len(s); i++ {
+// 		f[s[i]-'a']++
+// 	}
+
+// 	// for i := 0; i < len(s); i++ {
+// 	// 	heap.Push(&hp, char{f[s[i]-'a'], string(s[i] - 'a')})
+// 	// }
+
+// 	start := 0
+// 	heap.Push(&hp, char{f[s[0]-'a'], rune(s[0])})
+// 	for i := 0; i < len(s); i++ {
+
+// 		f[s[i]-'a']--
+
+// 		//can we break it from here
+// 		if hp.Len() > 0 {
+// 			top := hp.Top()
+// 			if f[top.val-'a'] == 0 {
+// 				heap.Pop(&hp) //remove from heap
+// 				if check(start, i, f) {
+// 					start = i + 1
+// 					ans = append(ans, i)
+// 				}
+// 			} else {
+// 				heap.Push(&hp, char{f[s[i]-'a'], rune(s[i])})
+// 			}
+// 		} else {
+// 			heap.Push(&hp, char{f[s[i]-'a'], rune(s[i])})
+// 		}
+// 	}
+// 	return ans
+// }
+
+func partitionLabels(s string) []int {
+
+	f := make([]int, 26)
+	ans := make([]int, 0)
+
+	for i := 0; i < len(s); i++ {
+		f[s[i]-'a']++
 	}
 
-	h := make(intheap, 0)
+	start := 0
+	for i := 0; i < len(s); i++ {
 
-	sort.SliceStable(intervals, func(i, j int) bool {
-		return intervals[i].Start < intervals[j].Start
-	})
-	///fmt.Println(intervals[0], intervals[1])
+		f[s[i]-'a']--
 
-	ans := 1
-	heap.Push(&h, intervals[0].End)
-
-	for i := 1; i < len(intervals); i++ {
-		if intervals[i].Start < h.Top() {
-			ans++
-		} else {
-			heap.Pop(&h)
+		if f[s[i]-'a'] == 0 {
+			if check(start, i, f, s) {
+				ans = append(ans, i-start+1)
+				start = i + 1
+			}
 		}
-		heap.Push(&h, intervals[i].End)
 	}
 	return ans
 }
 
-func main() {
-	arr := []*Interval{
-		{1, 5},
-		{6, 10},
-		{6, 11},
-		{10, 15},
-		{10, 16},
+func check(start, end int, f []int, s string) bool {
+	for i := start; i < end; i++ {
+		if f[s[i]-'a'] > 0 {
+			return false
+		}
 	}
-	fmt.Println(minMeetingRooms(arr))
+
+	return true
 }
+*/
